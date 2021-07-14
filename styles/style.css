@@ -1,0 +1,273 @@
+/* GOOGLE FONT */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap');
+
+/* BASE STYLE */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    color: #6C6C6C;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 26px;
+}
+
+h1 {
+    font-weight: bold;
+    font-size: 64px;
+    line-height: 80px;
+    color: #FFFFFF;
+}
+
+h2 {
+    color: #18191F;
+    font-weight: bold;
+    font-size: 28px;
+    line-height: 40px;
+}
+
+img {
+    max-width: 100%;
+}
+
+
+/* HEADER */
+
+#header {
+    width: 100%;
+    height: 109vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    flex-wrap: wrap;
+    background-color: #2D25A0;
+}
+
+.header-contact {
+    margin: 12.938rem 0 7.62rem 9rem;
+}
+
+.header-contact h1 {
+    margin-bottom: 2.31rem;
+}
+
+a.header-button {
+    width: 168px;
+    height: 44px;
+    background: #E02C6D;
+    padding: 14px 17px;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    color: #FFFFFF;
+    text-decoration: none;
+    border-radius: 5px;
+   
+}
+a.header-button:hover{
+    color:blue;
+    transition: 2s;
+}
+
+.header-img {
+    width: 57.75rem;
+    height: 48.375rem;
+    margin: 153px 140px 86px 0;
+}
+
+.header-img:hover {
+    transform: rotate(20deg);
+}
+
+
+
+/*PLAYERS */
+
+#players {
+    display: flex;
+    justify-content: center;
+    margin-top: 4rem;
+}
+
+.player {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 2rem;
+}
+
+.players-item {
+    width: 330px;
+    height: 474px;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+    padding: 1rem;
+}
+
+/*SHOP */
+
+section#shop-bazzer {
+    text-align: center;
+    margin: 3rem 0 0 0;
+    background: #f0f0f0;
+    padding: 4rem;
+}
+
+h3.shop-title {
+    font-weight: 400;
+    color: #000;
+    letter-spacing: 0;
+    margin-right: 55px;
+    margin-bottom: 49px;
+    font-size: 30px;
+}
+
+.shops {
+    display: flex;
+    justify-content: center;
+}
+
+.shop {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 2rem;
+}
+
+.shop-item {
+    width: 329px;
+    height: 474px;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+    position: relative;
+    
+}
+.shop-img:hover{
+    transform: rotate(-10deg);
+
+}
+
+
+.shop-info p {
+    padding: 0 20px;
+    font-weight: 400;
+    font-size: 16px;
+    color: #000;
+    margin-bottom: 12px;
+    line-height: 23px;
+}
+
+/* FOOTER */
+
+footer.footer {
+    display: flex;
+    justify-content: center;
+    margin-top: 4rem;
+}
+
+.footer-contact img {
+    width: 14.239rem;
+    height: 4.214rem;
+}
+
+.footer-contact {
+    text-align: center;
+}
+
+.social-icon i {
+    font-size: 2rem;
+    padding: 1rem;
+    color: #969BAB;
+    transition: 2s;
+}
+
+.social-icon i:hover {
+    color: #2d25a0;
+    transition: 2s;
+}
+
+/* Responsive */
+
+/*  MOBILE DEVISE  */
+
+@media only screen and (max-width:688px) {
+    #header {
+        justify-content: center;
+    }
+    .header-contact {
+        margin: 7rem 4.125rem 0 1rem;
+    }
+    .header-contact h1 {
+        font-size: 36px;
+        line-height: 50px;
+    }
+    .header-img {
+        width: 20.563rem;
+        height: 16.198rem;
+        margin: 1rem 1rem 3.866rem 1rem;
+    }
+    .player {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .shop {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    h3.shop-title {
+        margin-right: 0px;
+        font-size: 25px;
+    }
+    
+}
+
+
+/* tablat DEVISE  */
+
+@media only screen and (min-width:688px) and (max-width:992px) {
+    #header {
+        justify-content: center;
+    }
+    .header-contact {
+        margin: 5.938rem 0 -4.38rem 4rem;
+    }
+    .header-img {
+        width: 35.75rem;
+        height: 25.375rem;
+        margin: 110px 0px 86px 0;
+    }
+    .player {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .shop {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+}
+
+
+/* laptop DEVISE  */
+
+@media only screen and (min-width:992px) and (max-width:1697px) {
+    #header {
+        justify-content: center;
+    }
+    .header-contact {
+        margin: 14.938rem 0 -4.38rem 4rem;
+    }
+    .header-img {
+        width: 35.75rem;
+        height: 25.375rem;
+        margin: 72px 46px 86px 0;
+    }
+    .player {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .shop {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+}
